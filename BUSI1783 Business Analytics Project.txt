@@ -1,0 +1,155 @@
+# BUSI1783 Business Analytics Project
+
+## Project Overview
+
+This repository contains the Python-based analysis conducted for the BUSI1783 Business Analytics Project.
+
+The project investigates retail shopping behaviour and identifies distinct customer segments based on four behavioural dimensions:
+
+- Shopping Behaviour
+- Brand Loyalty
+- Promotional Sensitivity
+- Product Category Variety
+
+The analysis also examines whether the identified customer segments differ according to demographic characteristics and shopping-channel preferences.
+
+## Dataset
+
+The analysis uses questionnaire data containing responses from **216 participants**.
+
+The Excel workbook contains the original questionnaire responses as well as manually coded numerical data used for the statistical analysis.
+
+The dataset includes information relating to:
+
+- Age
+- Gender
+- Monthly income
+- Education
+- Employment status
+- Shopping behaviour
+- Brand loyalty
+- Promotional sensitivity
+- Product category variety
+- Shopping-channel preferences
+
+The behavioural questionnaire items are analysed using a five-point Likert scale:
+
+- 1 = Strongly Disagree
+- 2 = Disagree
+- 3 = Neutral / Uncertain
+- 4 = Agree
+- 5 = Strongly Agree
+
+The numerical behavioural variables were prepared from the coded questionnaire responses before conducting the statistical analysis.
+
+## Python Notebook
+
+The complete analysis was conducted using Python in a Jupyter Notebook environment.
+
+The notebook contains the full analytical workflow, including data preparation, statistical analysis, customer segmentation, visualisations and interpretation of results.
+
+## Analytical Methods
+
+The following analytical techniques are implemented in the notebook:
+
+### Data Preparation
+- Data loading and inspection
+- Questionnaire coding
+- Likert-scale preparation
+- Construction of composite behavioural measures
+
+### Descriptive and Reliability Analysis
+- Descriptive statistics
+- Cronbach's Alpha reliability analysis
+
+### Correlation Analysis
+- Pearson correlation analysis
+- Correlation matrix visualisation
+
+### Principal Component Analysis (PCA)
+- Kaiser-Meyer-Olkin (KMO) test
+- Bartlett's Test of Sphericity
+- Eigenvalue analysis
+- Scree plot
+- Principal Component Analysis
+- Varimax rotation
+- Rotated component matrix
+
+### Customer Segmentation
+- Standardisation of clustering variables
+- Elbow Method
+- Silhouette Analysis
+- K-Means clustering
+- PCA-based cluster visualisation
+- Cluster profile visualisation
+
+A three-cluster solution was selected based on the clustering analysis.
+
+The final cluster sizes were:
+
+- Cluster 1: 48 respondents
+- Cluster 2: 32 respondents
+- Cluster 3: 136 respondents
+
+### Cluster Comparison
+- Welch's ANOVA
+- Games-Howell post-hoc comparisons
+- Kruskal-Wallis tests
+
+### Demographic Analysis
+Chi-square tests were used to investigate relationships between customer clusters and:
+
+- Age
+- Gender
+- Income
+- Education
+- Employment status
+
+### Shopping-Channel Analysis
+Chi-square tests were also conducted to examine relationships between customer clusters and shopping-channel preferences, including:
+
+- General shopping-channel preference
+- Most frequently used channel
+- Preferred research/comparison channel
+- Preferred channel for routine purchases
+- Preferred channel for expensive or important purchases
+
+## Main Customer Segments
+
+The analysis identified three customer segments:
+
+### Cluster 1 – Highly Engaged / Promotion Responsive
+This group demonstrates the highest overall shopping engagement, brand loyalty, promotional sensitivity and product-category variety.
+
+### Cluster 2 – Low Engagement
+This group shows comparatively lower levels of shopping engagement, brand loyalty and promotional responsiveness.
+
+### Cluster 3 – Moderate / Mainstream
+This is the largest customer segment and demonstrates moderate behavioural scores across the four behavioural dimensions.
+
+## Repository Contents
+
+| File | Description |
+|---|---|
+| `working sheet new.xlsx` | Questionnaire dataset containing the original and coded data |
+| `analysis_final_fixed_executed.ipynb` | Final executed Jupyter Notebook containing the complete Python analysis and results |
+| `README.md` | Project, dataset and analytical methodology documentation |
+
+## Software and Libraries
+
+The analysis was conducted in Python using libraries including:
+
+- pandas
+- NumPy
+- Matplotlib
+- scikit-learn
+- SciPy
+- statsmodels
+- pingouin
+- factor_analyzer
+
+## Reproducibility
+
+The Jupyter Notebook contains the code used to prepare the data, perform the statistical analyses, generate customer clusters and produce the visualisations and results presented in the project.
+
+The notebook should be executed sequentially from the first cell to ensure that all required variables and intermediate results are generated correctly.
